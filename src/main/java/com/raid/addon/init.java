@@ -20,6 +20,13 @@ public class init extends MeteorAddon {
     }
 
     @Override
+    public void onRegisterCategories() {
+        Modules.registerCategory(CATEGORY);
+    }
+
+
+
+    @Override
     public GithubRepo getRepo() {
         return new GithubRepo("bitsixfour", "raidfarmaddon");
     }
